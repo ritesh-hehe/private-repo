@@ -6,13 +6,13 @@ DEMO_LIST = random.sample(range(1, 101), 10)
 
 
 # BEGIN FUNCTION ZOME
-def addSpaces() -> None:
-    for _ in range(10):
+def addSpaces(spaceRange=20) -> None:
+    for _ in range(spaceRange):
         print(end=" ")
 
 
-def addDottedLines(spaceRange=50) -> None:
-    for _ in range(spaceRange):
+def addDottedLines() -> None:
+    for _ in range(80):
         print("-", end="")
     print()
 
@@ -29,10 +29,9 @@ def showMenu() -> None:
     print("Press 2 to delete a specific element(remove)")
     print("Press 3 to pop element(pop)")
     print("Press 4 to add elements to list(append or extend)")
-    print("Press 5 to clear list(clear)")
-    print("Press 6 to reverse list([::-1])")
-    print("Press 7 to exit program(break)")
-
+    print("Press 5 to reverse list([::-1])")
+    print("Press 6 to clear list(clear)")
+    print("Press 7 to exit program(break)\n")
 # END FUNCTION ZONE
 
 
@@ -50,8 +49,9 @@ while True:
     addDottedLines()
     query = int(input("INPUT: "))
     match(query):
+
         case 1:
-            sortType = input("Ascending(a) or Descending(d)")
+            sortType = input("Ascending(a) or Descending(d): ")
             if sortType not in "aAdD":
                 print("Invalid input..")
             else:
@@ -71,7 +71,7 @@ while True:
             addDottedLines()
             addSpaces()
             print(DEMO_LIST)
-            addSpaces(50 - len('Index -> '))
+            addSpaces(20 - len('Index -> '))
             print(f'Index -> {showIndex(DEMO_LIST)}')
             delIndex = int(input("Enter index to pop.."))
             try:
@@ -86,7 +86,14 @@ while True:
             print("List extended!")
 
         case 5:
-            pass
+            DEMO_LIST = DEMO_LIST[::-1]
+
+        case 6:
+            DEMO_LIST.clear()
+
+        case 7:
+            input("Press any key to exit...")
+            break
 
         case default:
             print("Invalid Input...")
