@@ -1,4 +1,5 @@
 import random
+import time
 
 
 DEMO_LIST = [1, 1, 2, 5, 3, 7, 4, 11, 23, 109, 37, 54, 12, 109, 12]
@@ -27,11 +28,16 @@ search_query = int(input("Enter number to search: "))
 print(f"Press 1 if you want to search in DEMO_LIST (length: {len(DEMO_LIST)})")
 print("Press 2 if you want to search in random generated list (length: 10k)")
 query = int(input("INPUT: "))
+TIME_PROG_EXEC = time.perf_counter()
 match(query):
     case 1:
         print(linearSearch(search_query, DEMO_LIST))
+        print(
+            f"Time Taken:{round(time.perf_counter()-TIME_PROG_EXEC, 10)} second(s)")
     case 2:
         randGenList = generateBadList()
         print(linearSearch(search_query, randGenList))
+        print(
+            f"Time Taken:{round(time.perf_counter()-TIME_PROG_EXEC, 10)} second(s)")
     case default:
         print("Invalid Input")
