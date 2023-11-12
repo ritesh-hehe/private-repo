@@ -12,8 +12,8 @@ from the specific website. Tis but a very fortunate thing, I must say...
 Glad you asked!(prolly), they are:
 
 - [x] [Sir Adrian's Simple Programming Questions](https://adriann.github.io/programming_problems.html)
-- [] [Project Euler](https://projecteuler.net/archives)
-- [] [Sir John Dalby's Assignments](https://users.csc.calpoly.edu/~jdalbey/103/Projects/ProgrammingPractice.html)
+- [ ] [Project Euler](https://projecteuler.net/archives)
+- [ ] [Sir John Dalby's Assignments](https://users.csc.calpoly.edu/~jdalbey/103/Projects/ProgrammingPractice.html)
 
 There are more, but right now, I will try going through these, if you are interested in the others, please scroll down
 in Sir Adrian's Simple Programming Questions.
