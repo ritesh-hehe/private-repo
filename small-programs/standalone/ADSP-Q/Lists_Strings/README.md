@@ -22,13 +22,13 @@
 18. [] Implement binary search.
 19. [] Write a function that takes a list of strings an prints them, one per line, in a rectangular frame. For example the list ["Hello", "World", "in", "a", "frame"] gets printed as:
 
-         ************
-         \* Hello \*\*\*
-         \* World \*\*\*\*
-         \* in \*\*\*\*\*
-         \* a \*\*\*\*\*\*
-         \* frame \*\*\*\*
-         ************
+         ***********
+         * Hello ***
+         * World ***
+         * in ******
+         * a *******
+         * frame ***
+         ***********
                     ....just pretend it is a box...i tried replicating it k?
 
 20. [] Write function that translates a text to Pig Latin and back. English is translated to Pig Latin by taking the first letter of every word, moving it to the end of the word and adding ‘ay’. “The quick brown fox” becomes “Hetay uickqay rownbay oxfay”.
