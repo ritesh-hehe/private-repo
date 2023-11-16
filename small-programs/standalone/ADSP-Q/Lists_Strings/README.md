@@ -5,7 +5,7 @@
 1.  [x] Write a function that returns the largest element in a list.
 2.  [x] Write function that reverses a list, preferably in place.
 3.  [x] Write a function that checks whether an element occurs in a list.
-4.  [] Write a function that returns the elements on odd positions in a list.
+4.  [x] Write a function that returns the elements on odd positions in a list.
 5.  [] Write a function that computes the running total of a list.
 6.  [] Write a function that tests whether a string is a palindrome.
 7.  [] Write three functions that compute the sum of the numbers in a list: using a for-loop, a while-loop and recursion. (Subject to availability of these constructs in your language of choice.)
