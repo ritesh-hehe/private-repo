@@ -4,7 +4,6 @@ import random
 
 
 random_array = numpy.array(random.sample(range(1, 100), 50))
-sum_array_recursion = 0
 
 
 def for_loop_method(arr: numpy.ndarray) -> int:
